@@ -1,0 +1,11 @@
+;зїеп:НЏеў
+EXPORTS
+    IZYCompiler_Create      @1      NONAME
+    IZYCompiler_Release     @2      NONAME
+    IZYProfiler_Create      @3      NONAME
+    IZYProfiler_Release     @4      NONAME
+    IZYTextFile_LoadText    @5      NONAME
+    IZYTextFile_FreeText    @6      NONAME
+    IZYTextFile_SaveText    @7      NONAME
+    IZYTextFile_Exists      @8      NONAME
+    IZYTextFile_DeleteText  @9      NONAME

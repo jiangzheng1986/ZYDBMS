@@ -1,0 +1,2712 @@
+
+(object Petal
+    version    	42
+    _written   	"Microsoft Visual Modeler 2.0.8139"
+    charSet    	134)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    defaults   	(object defaults
+	rightMargin 	0.250000
+	leftMargin 	0.250000
+	topMargin  	0.250000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	TRUE
+	gridX      	16
+	gridY      	16
+	defaultFont 	(object Font
+	    size       	9
+	    face       	"Tahoma"
+	    charSet    	134
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	3
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"3873EAA2008D"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list)
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"3873EAA3000C"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"3873EAA2008C"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"3873EAA2008E"
+	logical_models 	(list unit_reference_list
+	    (object Class_Category "User Services"
+		attributes 	(list Attribute_Set
+		    (object Attribute
+			tool       	"VisualBasic"
+			name       	"TierPackage"
+			value      	"User Services"))
+		quid       	"3873EAA30015"
+		documentation 	"User services provide the visual interface for presenting information and gathering data in an application. The user services connect the user with the application and request the business and/or data services needed by the user to execute business tasks."
+		visible_categories 	(list visibility_relationship_list
+		    (object Visibility_Relationship
+			attributes 	(list Attribute_Set
+			    (object Attribute
+				tool       	"VisualBasic"
+				name       	"TierPackage"
+				value      	"Business Services"))
+			quid       	"3873EAA3001B"
+			supplier   	"Logical View::Business Services"
+			quidu      	"3873EAA30017")
+		    (object Visibility_Relationship
+			attributes 	(list Attribute_Set
+			    (object Attribute
+				tool       	"VisualBasic"
+				name       	"TierPackage"
+				value      	"Data Services"))
+			quid       	"3873EAA3001C"
+			supplier   	"Logical View::Data Services"
+			quidu      	"3873EAA30019"))
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object Class "ZYFile"
+			quid       	"3873EABA0130")
+		    (object Class "ZYTableFile"
+			quid       	"3873EAC00111"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"3873EAE70044"
+				supplier   	"Logical View::User Services::ZYFile"
+				quidu      	"3873EABA0130")))
+		    (object Class "ZYTable"
+			quid       	"3873EACD0250"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"387658A302BE"
+				supplier   	"Logical View::User Services::IZYTable"
+				quidu      	"3876589A00B2")))
+		    (object Class "ZYIndex"
+			quid       	"3873EAD203D4"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"3873EAEE0334"
+				supplier   	"Logical View::User Services::ZYTable"
+				quidu      	"3873EACD0250")
+			    (object Inheritance_Relationship
+				quid       	"387658C3033C"
+				supplier   	"Logical View::User Services::IZYIndex"
+				quidu      	"387658B80337")))
+		    (object Class "ZYDatabase"
+			quid       	"3873EAD80007"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"387658910363"
+				supplier   	"Logical View::User Services::IZYDatabase"
+				quidu      	"387658880161")))
+		    (object Class "ZYColumn"
+			quid       	"3873EB1B0392"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"387658E90138"
+				supplier   	"Logical View::User Services::IZYColumn"
+				quidu      	"387658DE0205")))
+		    (object Class "ZYRow"
+			quid       	"3873EB2200B7")
+		    (object Class "ZYString"
+			quid       	"3873EB4B0305")
+		    (object Class "ZYDataTime"
+			quid       	"3873EB50033F"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"38765968020D"
+				supplier   	"Logical View::User Services::IZYDateTime"
+				quidu      	"3876595603CA")))
+		    (object Class "ZYRandom"
+			quid       	"3873EB5801EC"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"387659530131"
+				supplier   	"Logical View::User Services::IZYRandom"
+				quidu      	"38765941029D")))
+		    (object Class "ZYDatabseFile"
+			quid       	"3873EBA500E8"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"3873EBB103CA"
+				supplier   	"Logical View::User Services::ZYFile"
+				quidu      	"3873EABA0130")))
+		    (object Class "ZYIndexDecl"
+			quid       	"3876585301A1")
+		    (object Class "IZYDatabase"
+			quid       	"387658880161")
+		    (object Class "IZYTable"
+			quid       	"3876589A00B2")
+		    (object Class "IZYIndex"
+			quid       	"387658B80337")
+		    (object Class "IZYColumn"
+			quid       	"387658DE0205")
+		    (object Class "IZYRandom"
+			quid       	"38765941029D")
+		    (object Class "IZYDateTime"
+			quid       	"3876595603CA")
+		    (object Class "IZYMemory"
+			quid       	"386DF27300E2")
+		    (object Class "ZYMemory"
+			quid       	"386DF27C0257"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"386DF285003E"
+				supplier   	"Logical View::User Services::IZYMemory"
+				quidu      	"386DF27300E2")))
+		    (object Association "$UNNAMED$0"
+			quid       	"3873EAF201D1"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$1"
+				quid       	"3873EAF20393"
+				supplier   	"Logical View::User Services::ZYTable"
+				quidu      	"3873EACD0250"
+				is_aggregate 	TRUE)
+			    (object Role "$UNNAMED$2"
+				quid       	"3873EAF2039E"
+				supplier   	"Logical View::User Services::ZYTableFile"
+				quidu      	"3873EAC00111"
+				is_navigable 	TRUE)))
+		    (object Association "$UNNAMED$3"
+			quid       	"3873EAF90068"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$4"
+				quid       	"3873EAF90235"
+				supplier   	"Logical View::User Services::ZYDatabase"
+				quidu      	"3873EAD80007"
+				is_aggregate 	TRUE)
+			    (object Role "$UNNAMED$5"
+				quid       	"3873EAF90236"
+				supplier   	"Logical View::User Services::ZYTable"
+				quidu      	"3873EACD0250"
+				is_navigable 	TRUE)))
+		    (object Association "$UNNAMED$6"
+			quid       	"3873EB280341"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$7"
+				quid       	"3873EB290112"
+				supplier   	"Logical View::User Services::ZYTable"
+				quidu      	"3873EACD0250"
+				is_aggregate 	TRUE)
+			    (object Role "$UNNAMED$8"
+				quid       	"3873EB29011C"
+				supplier   	"Logical View::User Services::ZYColumn"
+				quidu      	"3873EB1B0392"
+				is_navigable 	TRUE)))
+		    (object Association "$UNNAMED$9"
+			quid       	"3873EB2C0383"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$10"
+				quid       	"3873EB2D01FE"
+				supplier   	"Logical View::User Services::ZYTable"
+				quidu      	"3873EACD0250"
+				is_aggregate 	TRUE)
+			    (object Role "$UNNAMED$11"
+				quid       	"3873EB2D01FF"
+				supplier   	"Logical View::User Services::ZYRow"
+				quidu      	"3873EB2200B7"
+				is_navigable 	TRUE)))
+		    (object Association "$UNNAMED$12"
+			quid       	"3873EB7701A0"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$13"
+				quid       	"3873EB77036D"
+				supplier   	"Logical View::User Services::ZYColumn"
+				quidu      	"3873EB1B0392"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$14"
+				quid       	"3873EB770377"
+				supplier   	"Logical View::User Services::ZYTableFile"
+				quidu      	"3873EAC00111")))
+		    (object Association "$UNNAMED$15"
+			quid       	"3873EB7A0303"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$16"
+				quid       	"3873EB7B0192"
+				supplier   	"Logical View::User Services::ZYRow"
+				quidu      	"3873EB2200B7"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$17"
+				quid       	"3873EB7B0193"
+				supplier   	"Logical View::User Services::ZYTableFile"
+				quidu      	"3873EAC00111")))
+		    (object Association "$UNNAMED$18"
+			quid       	"3873EBB70062"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$19"
+				quid       	"3873EBB7017A"
+				supplier   	"Logical View::User Services::ZYDatabase"
+				quidu      	"3873EAD80007"
+				is_aggregate 	TRUE)
+			    (object Role "$UNNAMED$20"
+				quid       	"3873EBB70184"
+				supplier   	"Logical View::User Services::ZYDatabseFile"
+				quidu      	"3873EBA500E8"
+				is_navigable 	TRUE)))
+		    (object Association "$UNNAMED$21"
+			quid       	"3873EBD600D4"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$22"
+				quid       	"3873EBD603A5"
+				supplier   	"Logical View::User Services::ZYDatabase"
+				quidu      	"3873EAD80007"
+				is_aggregate 	TRUE)
+			    (object Role "$UNNAMED$23"
+				quid       	"3873EBD603A6"
+				supplier   	"Logical View::User Services::ZYIndex"
+				quidu      	"3873EAD203D4"
+				is_navigable 	TRUE)))
+		    (object Association "$UNNAMED$24"
+			quid       	"3876585F00A4"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$25"
+				quid       	"3876585F0307"
+				supplier   	"Logical View::User Services::ZYIndexDecl"
+				quidu      	"3876585301A1"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$26"
+				quid       	"3876585F0308"
+				supplier   	"Logical View::User Services::ZYDatabseFile"
+				quidu      	"3873EBA500E8")))
+		    (object Association "$UNNAMED$27"
+			quid       	"387658620094"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$28"
+				quid       	"387658620289"
+				supplier   	"Logical View::User Services::ZYDatabase"
+				quidu      	"3873EAD80007"
+				is_aggregate 	TRUE)
+			    (object Role "$UNNAMED$29"
+				quid       	"387658620293"
+				supplier   	"Logical View::User Services::ZYIndexDecl"
+				quidu      	"3876585301A1"
+				is_navigable 	TRUE)))
+		    (object Association "$UNNAMED$30"
+			quid       	"38765B67008B"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$31"
+				quid       	"38765B6702F8"
+				supplier   	"Logical View::User Services::ZYString"
+				quidu      	"3873EB4B0305"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$32"
+				quid       	"38765B6702F9"
+				supplier   	"Logical View::User Services::ZYDatabase"
+				quidu      	"3873EAD80007")))
+		    (object Association "$UNNAMED$33"
+			quid       	"38765B6A019E"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$34"
+				quid       	"38765B6B0087"
+				supplier   	"Logical View::User Services::ZYString"
+				quidu      	"3873EB4B0305"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$35"
+				quid       	"38765B6B0091"
+				supplier   	"Logical View::User Services::ZYTable"
+				quidu      	"3873EACD0250")))
+		    (object Association "$UNNAMED$36"
+			quid       	"38765B6F00D3"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$37"
+				quid       	"38765B7000C0"
+				supplier   	"Logical View::User Services::ZYString"
+				quidu      	"3873EB4B0305"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$38"
+				quid       	"38765B7000CA"
+				supplier   	"Logical View::User Services::ZYColumn"
+				quidu      	"3873EB1B0392")))
+		    (object Association "$UNNAMED$39"
+			quid       	"38765B79002D"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$40"
+				quid       	"38765B79031C"
+				supplier   	"Logical View::User Services::ZYString"
+				quidu      	"3873EB4B0305"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$41"
+				quid       	"38765B79031D"
+				supplier   	"Logical View::User Services::ZYIndexDecl"
+				quidu      	"3876585301A1")))
+		    (object Association "$UNNAMED$42"
+			quid       	"3871324D038B"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$43"
+				quid       	"3871324E0292"
+				supplier   	"Logical View::User Services::ZYString"
+				quidu      	"3873EB4B0305"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$44"
+				quid       	"3871324E029C"
+				supplier   	"Logical View::User Services::ZYDatabase"
+				quidu      	"3873EAD80007")))
+		    (object Association "$UNNAMED$45"
+			quid       	"387132500399"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$46"
+				quid       	"3871325101F6"
+				supplier   	"Logical View::User Services::ZYString"
+				quidu      	"3873EB4B0305"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$47"
+				quid       	"3871325101F7"
+				supplier   	"Logical View::User Services::ZYTable"
+				quidu      	"3873EACD0250")))
+		    (object Association "$UNNAMED$48"
+			quid       	"387132600003"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$49"
+				quid       	"387132600342"
+				supplier   	"Logical View::User Services::ZYString"
+				quidu      	"3873EB4B0305"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$50"
+				quid       	"387132600343"
+				supplier   	"Logical View::User Services::ZYColumn"
+				quidu      	"3873EB1B0392")))
+		    (object Association "$UNNAMED$51"
+			quid       	"3871327B02BF"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$52"
+				quid       	"3871327C01DA"
+				supplier   	"Logical View::User Services::ZYString"
+				quidu      	"3873EB4B0305"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$53"
+				quid       	"3871327C01DB"
+				supplier   	"Logical View::User Services::ZYTableFile"
+				quidu      	"3873EAC00111"))))
+		logical_presentations 	(list unit_reference_list
+		    (object ClassDiagram "Package Overview"
+			quid       	"3873EAA30016"
+			title      	"Package Overview"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list
+			    (object ClassView "Class" "Logical View::User Services::ZYFile" @1
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1216, 1312)
+				label      	(object ItemLabel
+				    Parent_View 	@1
+				    location   	(1135, 1267)
+				    nlines     	1
+				    max_width  	162
+				    justify    	0
+				    label      	"ZYFile")
+				icon_style 	"Icon"
+				quidu      	"3873EABA0130"
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::User Services::ZYDataTime" @2
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(640, 928)
+				label      	(object ItemLabel
+				    Parent_View 	@2
+				    location   	(517, 883)
+				    nlines     	1
+				    max_width  	246
+				    justify    	0
+				    label      	"ZYDataTime")
+				icon_style 	"Icon"
+				quidu      	"3873EB50033F"
+				width      	264
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::User Services::ZYRandom" @3
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(640, 1152)
+				label      	(object ItemLabel
+				    Parent_View 	@3
+				    location   	(529, 1107)
+				    nlines     	1
+				    max_width  	222
+				    justify    	0
+				    label      	"ZYRandom")
+				icon_style 	"Icon"
+				quidu      	"3873EB5801EC"
+				width      	240
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::User Services::IZYDatabase" @4
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(224, 144)
+				label      	(object ItemLabel
+				    Parent_View 	@4
+				    location   	(102, 99)
+				    nlines     	1
+				    max_width  	244
+				    justify    	0
+				    label      	"IZYDatabase")
+				icon_style 	"Icon"
+				quidu      	"387658880161"
+				width      	262
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::User Services::IZYTable" @5
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(192, 400)
+				label      	(object ItemLabel
+				    Parent_View 	@5
+				    location   	(101, 355)
+				    nlines     	1
+				    max_width  	182
+				    justify    	0
+				    label      	"IZYTable")
+				icon_style 	"Icon"
+				quidu      	"3876589A00B2"
+				width      	200
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::User Services::IZYIndex" @6
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(192, 576)
+				label      	(object ItemLabel
+				    Parent_View 	@6
+				    location   	(98, 531)
+				    nlines     	1
+				    max_width  	188
+				    justify    	0
+				    label      	"IZYIndex")
+				icon_style 	"Icon"
+				quidu      	"387658B80337"
+				width      	206
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::User Services::IZYRandom" @7
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(208, 1152)
+				label      	(object ItemLabel
+				    Parent_View 	@7
+				    location   	(93, 1107)
+				    nlines     	1
+				    max_width  	230
+				    justify    	0
+				    label      	"IZYRandom")
+				icon_style 	"Icon"
+				quidu      	"38765941029D"
+				width      	248
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object InheritView "" @8
+				stereotype 	TRUE
+				quidu      	"387659530131"
+				client     	@3
+				supplier   	@7
+				line_style 	0)
+			    (object ClassView "Class" "Logical View::User Services::IZYDateTime" @9
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(224, 928)
+				label      	(object ItemLabel
+				    Parent_View 	@9
+				    location   	(96, 883)
+				    nlines     	1
+				    max_width  	256
+				    justify    	0
+				    label      	"IZYDateTime")
+				icon_style 	"Icon"
+				quidu      	"3876595603CA"
+				width      	274
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object InheritView "" @10
+				stereotype 	TRUE
+				quidu      	"38765968020D"
+				client     	@2
+				supplier   	@9
+				line_style 	0)
+			    (object ClassView "Class" "Logical View::User Services::ZYDatabseFile" @11
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1424, 928)
+				label      	(object ItemLabel
+				    Parent_View 	@11
+				    location   	(1289, 883)
+				    nlines     	1
+				    max_width  	270
+				    justify    	0
+				    label      	"ZYDatabseFile")
+				icon_style 	"Icon"
+				quidu      	"3873EBA500E8"
+				width      	288
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object InheritView "" @12
+				stereotype 	TRUE
+				quidu      	"3873EBB103CA"
+				client     	@11
+				supplier   	@1
+				line_style 	0)
+			    (object ClassView "Class" "Logical View::User Services::ZYIndex" @13
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(608, 576)
+				label      	(object ItemLabel
+				    Parent_View 	@13
+				    location   	(517, 531)
+				    nlines     	1
+				    max_width  	182
+				    justify    	0
+				    label      	"ZYIndex")
+				icon_style 	"Icon"
+				quidu      	"3873EAD203D4"
+				width      	200
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object InheritView "" @14
+				stereotype 	TRUE
+				quidu      	"387658C3033C"
+				client     	@13
+				supplier   	@6
+				line_style 	0)
+			    (object ClassView "Class" "Logical View::User Services::ZYIndexDecl" @15
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1728, 720)
+				label      	(object ItemLabel
+				    Parent_View 	@15
+				    location   	(1602, 675)
+				    nlines     	1
+				    max_width  	252
+				    justify    	0
+				    label      	"ZYIndexDecl")
+				icon_style 	"Icon"
+				quidu      	"3876585301A1"
+				width      	270
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$24" @16
+				location   	(1574, 823)
+				stereotype 	TRUE
+				quidu      	"3876585F00A4"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$25" @17
+					Parent_View 	@16
+					location   	(1174, 279)
+					stereotype 	TRUE
+					quidu      	"3876585F0307"
+					client     	@16
+					supplier   	@15
+					line_style 	0)
+				    (object RoleView "$UNNAMED$26" @18
+					Parent_View 	@16
+					location   	(1174, 279)
+					stereotype 	TRUE
+					quidu      	"3876585F0308"
+					client     	@16
+					supplier   	@11
+					line_style 	0)))
+			    (object ClassView "Class" "Logical View::User Services::ZYDatabase" @19
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1216, 144)
+				label      	(object ItemLabel
+				    Parent_View 	@19
+				    location   	(1101, 99)
+				    nlines     	1
+				    max_width  	230
+				    justify    	0
+				    label      	"ZYDatabase")
+				icon_style 	"Icon"
+				quidu      	"3873EAD80007"
+				width      	248
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$18" @20
+				location   	(1319, 535)
+				stereotype 	TRUE
+				quidu      	"3873EBB70062"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$19" @21
+					Parent_View 	@20
+					location   	(359, 407)
+					stereotype 	TRUE
+					quidu      	"3873EBB7017A"
+					client     	@20
+					supplier   	@19
+					line_style 	0)
+				    (object RoleView "$UNNAMED$20" @22
+					Parent_View 	@20
+					location   	(359, 407)
+					stereotype 	TRUE
+					quidu      	"3873EBB70184"
+					client     	@20
+					supplier   	@11
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$21" @23
+				location   	(911, 359)
+				stereotype 	TRUE
+				quidu      	"3873EBD600D4"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$22" @24
+					Parent_View 	@23
+					location   	(495, -1065)
+					stereotype 	TRUE
+					quidu      	"3873EBD603A5"
+					client     	@23
+					supplier   	@19
+					line_style 	0)
+				    (object RoleView "$UNNAMED$23" @25
+					Parent_View 	@23
+					location   	(495, -1065)
+					stereotype 	TRUE
+					quidu      	"3873EBD603A6"
+					client     	@23
+					supplier   	@13
+					line_style 	0)))
+			    (object InheritView "" @26
+				stereotype 	TRUE
+				quidu      	"387658910363"
+				client     	@19
+				supplier   	@4
+				line_style 	0)
+			    (object AssociationViewNew "$UNNAMED$27" @27
+				location   	(1472, 431)
+				stereotype 	TRUE
+				quidu      	"387658620094"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$28" @28
+					Parent_View 	@27
+					location   	(1312, -337)
+					stereotype 	TRUE
+					quidu      	"387658620289"
+					client     	@27
+					supplier   	@19
+					line_style 	0)
+				    (object RoleView "$UNNAMED$29" @29
+					Parent_View 	@27
+					location   	(1312, -337)
+					stereotype 	TRUE
+					quidu      	"387658620293"
+					client     	@27
+					supplier   	@15
+					line_style 	0)))
+			    (object ClassView "Class" "Logical View::User Services::ZYString" @30
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1696, 1312)
+				label      	(object ItemLabel
+				    Parent_View 	@30
+				    location   	(1604, 1267)
+				    nlines     	1
+				    max_width  	184
+				    justify    	0
+				    label      	"ZYString")
+				icon_style 	"Icon"
+				quidu      	"3873EB4B0305"
+				width      	202
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::User Services::ZYRow" @31
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1248, 720)
+				label      	(object ItemLabel
+				    Parent_View 	@31
+				    location   	(1167, 675)
+				    nlines     	1
+				    max_width  	162
+				    justify    	0
+				    label      	"ZYRow")
+				icon_style 	"Icon"
+				quidu      	"3873EB2200B7"
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::User Services::ZYTable" @32
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1056, 400)
+				label      	(object ItemLabel
+				    Parent_View 	@32
+				    location   	(971, 355)
+				    nlines     	1
+				    max_width  	170
+				    justify    	0
+				    label      	"ZYTable")
+				icon_style 	"Icon"
+				quidu      	"3873EACD0250"
+				width      	188
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$9" @33
+				location   	(1151, 559)
+				stereotype 	TRUE
+				quidu      	"3873EB2C0383"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$10" @34
+					Parent_View 	@33
+					location   	(447, -625)
+					stereotype 	TRUE
+					quidu      	"3873EB2D01FE"
+					client     	@33
+					supplier   	@32
+					line_style 	0)
+				    (object RoleView "$UNNAMED$11" @35
+					Parent_View 	@33
+					location   	(447, -625)
+					stereotype 	TRUE
+					quidu      	"3873EB2D01FF"
+					client     	@33
+					supplier   	@31
+					line_style 	0)))
+			    (object InheritView "" @36
+				stereotype 	TRUE
+				quidu      	"3873EAEE0334"
+				client     	@13
+				supplier   	@32
+				line_style 	0)
+			    (object InheritView "" @37
+				stereotype 	TRUE
+				quidu      	"387658A302BE"
+				client     	@32
+				supplier   	@5
+				line_style 	0)
+			    (object AssociationViewNew "$UNNAMED$3" @38
+				location   	(1136, 271)
+				stereotype 	TRUE
+				quidu      	"3873EAF90068"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$4" @39
+					Parent_View 	@38
+					location   	(80, -273)
+					stereotype 	TRUE
+					quidu      	"3873EAF90235"
+					client     	@38
+					supplier   	@19
+					line_style 	0)
+				    (object RoleView "$UNNAMED$5" @40
+					Parent_View 	@38
+					location   	(80, -273)
+					stereotype 	TRUE
+					quidu      	"3873EAF90236"
+					client     	@38
+					supplier   	@32
+					line_style 	0)))
+			    (object ClassView "Class" "Logical View::User Services::ZYColumn" @41
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(848, 720)
+				label      	(object ItemLabel
+				    Parent_View 	@41
+				    location   	(743, 675)
+				    nlines     	1
+				    max_width  	210
+				    justify    	0
+				    label      	"ZYColumn")
+				icon_style 	"Icon"
+				quidu      	"3873EB1B0392"
+				width      	228
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$6" @42
+				location   	(951, 559)
+				stereotype 	TRUE
+				quidu      	"3873EB280341"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$7" @43
+					Parent_View 	@42
+					location   	(311, -305)
+					stereotype 	TRUE
+					quidu      	"3873EB290112"
+					client     	@42
+					supplier   	@32
+					line_style 	0)
+				    (object RoleView "$UNNAMED$8" @44
+					Parent_View 	@42
+					location   	(311, -305)
+					stereotype 	TRUE
+					quidu      	"3873EB29011C"
+					client     	@42
+					supplier   	@41
+					line_style 	0)))
+			    (object ClassView "Class" "Logical View::User Services::ZYTableFile" @45
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1056, 928)
+				label      	(object ItemLabel
+				    Parent_View 	@45
+				    location   	(942, 883)
+				    nlines     	1
+				    max_width  	228
+				    justify    	0
+				    label      	"ZYTableFile")
+				icon_style 	"Icon"
+				quidu      	"3873EAC00111"
+				width      	246
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object InheritView "" @46
+				stereotype 	TRUE
+				quidu      	"3873EAE70044"
+				client     	@45
+				supplier   	@1
+				line_style 	0)
+			    (object AssociationViewNew "$UNNAMED$15" @47
+				location   	(1151, 823)
+				stereotype 	TRUE
+				quidu      	"3873EB7A0303"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$16" @48
+					Parent_View 	@47
+					location   	(591, 199)
+					stereotype 	TRUE
+					quidu      	"3873EB7B0192"
+					client     	@47
+					supplier   	@31
+					line_style 	0)
+				    (object RoleView "$UNNAMED$17" @49
+					Parent_View 	@47
+					location   	(591, 199)
+					stereotype 	TRUE
+					quidu      	"3873EB7B0193"
+					client     	@47
+					supplier   	@45
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$0" @50
+				location   	(1056, 663)
+				stereotype 	TRUE
+				quidu      	"3873EAF201D1"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$1" @51
+					Parent_View 	@50
+					location   	(496, 39)
+					stereotype 	TRUE
+					quidu      	"3873EAF20393"
+					client     	@50
+					supplier   	@32
+					line_style 	0)
+				    (object RoleView "$UNNAMED$2" @52
+					Parent_View 	@50
+					location   	(496, 39)
+					stereotype 	TRUE
+					quidu      	"3873EAF2039E"
+					client     	@50
+					supplier   	@45
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$12" @53
+				location   	(951, 823)
+				stereotype 	TRUE
+				quidu      	"3873EB7701A0"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$13" @54
+					Parent_View 	@53
+					location   	(391, 199)
+					stereotype 	TRUE
+					quidu      	"3873EB77036D"
+					client     	@53
+					supplier   	@41
+					line_style 	0)
+				    (object RoleView "$UNNAMED$14" @55
+					Parent_View 	@53
+					location   	(391, 199)
+					stereotype 	TRUE
+					quidu      	"3873EB770377"
+					client     	@53
+					supplier   	@45
+					line_style 	0)))
+			    (object ClassView "Class" "Logical View::User Services::IZYMemory" @56
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(208, 1328)
+				label      	(object ItemLabel
+				    Parent_View 	@56
+				    location   	(95, 1283)
+				    nlines     	1
+				    max_width  	226
+				    justify    	0
+				    label      	"IZYMemory")
+				icon_style 	"Icon"
+				quidu      	"386DF27300E2"
+				width      	244
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::User Services::ZYMemory" @57
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(640, 1328)
+				label      	(object ItemLabel
+				    Parent_View 	@57
+				    location   	(535, 1283)
+				    nlines     	1
+				    max_width  	210
+				    justify    	0
+				    label      	"ZYMemory")
+				icon_style 	"Icon"
+				quidu      	"386DF27C0257"
+				width      	228
+				height     	112
+				annotation 	8
+				autoResize 	TRUE)
+			    (object InheritView "" @58
+				stereotype 	TRUE
+				quidu      	"386DF285003E"
+				client     	@57
+				supplier   	@56
+				line_style 	0)))))
+	    (object Class_Category "Business Services"
+		attributes 	(list Attribute_Set
+		    (object Attribute
+			tool       	"VisualBasic"
+			name       	"TierPackage"
+			value      	"Business Services"))
+		quid       	"3873EAA30017"
+		documentation 	"Business services respond to requests from the user (or other business services) in order to execute a business task. They accomplish this by requesting the data services needed and applying formal procedures and business rules to the relevant data. This protocol insulates the user from direct interaction with the database. Because business rules tend to change more frequently than the specific business tasks they support, they are ideal candidates for encapsulating in components that are physically separate from the application logic itself."
+		visible_categories 	(list visibility_relationship_list
+		    (object Visibility_Relationship
+			attributes 	(list Attribute_Set
+			    (object Attribute
+				tool       	"VisualBasic"
+				name       	"TierPackage"
+				value      	"User Services"))
+			quid       	"3873EAA3001D"
+			supplier   	"Logical View::User Services"
+			quidu      	"3873EAA30015")
+		    (object Visibility_Relationship
+			attributes 	(list Attribute_Set
+			    (object Attribute
+				tool       	"VisualBasic"
+				name       	"TierPackage"
+				value      	"Data Services"))
+			quid       	"3873EAA3001E"
+			supplier   	"Logical View::Data Services"
+			quidu      	"3873EAA30019"))
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list)
+		logical_presentations 	(list unit_reference_list
+		    (object ClassDiagram "Package Overview"
+			quid       	"3873EAA30018"
+			title      	"Package Overview"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list))))
+	    (object Class_Category "Data Services"
+		attributes 	(list Attribute_Set
+		    (object Attribute
+			tool       	"VisualBasic"
+			name       	"TierPackage"
+			value      	"Data Services"))
+		quid       	"3873EAA30019"
+		documentation 	"Data services maintain, access, and update data. They also manage and satisfy requests to manipulate data that are initiated by business services. Separating data services allows the data structure and access mechanisms to be maintained, modified, or, if necessary, even re-architected without affecting business or user services."
+		visible_categories 	(list visibility_relationship_list
+		    (object Visibility_Relationship
+			attributes 	(list Attribute_Set
+			    (object Attribute
+				tool       	"VisualBasic"
+				name       	"TierPackage"
+				value      	"User Services"))
+			quid       	"3873EAA3001F"
+			supplier   	"Logical View::User Services"
+			quidu      	"3873EAA30015")
+		    (object Visibility_Relationship
+			attributes 	(list Attribute_Set
+			    (object Attribute
+				tool       	"VisualBasic"
+				name       	"TierPackage"
+				value      	"Data Services"))
+			quid       	"3873EAA30020"
+			supplier   	"Logical View::Business Services"
+			quidu      	"3873EAA30017"))
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list)
+		logical_presentations 	(list unit_reference_list
+		    (object ClassDiagram "Package Overview"
+			quid       	"3873EAA3001A"
+			title      	"Package Overview"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list)))))
+	logical_presentations 	(list unit_reference_list
+	    (object Tier_Diagram "Three-Tiered Service Model"
+		quid       	"3873EAA30021"
+		title      	"Three-Tiered Service Model"
+		documentation 	"A three-tiered architectural approach separates the various components of a client/server system into three tiers of services. The user services, business and other middle tier services, and data services are the logical tiers that collaborate in an application"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object TierView "User Services" @59
+			label      	(object ItemLabel
+			    Parent_View 	@59
+			    location   	(6, 6)
+			    nlines     	2
+			    max_width  	-12
+			    justify    	0
+			    label      	"User Services")
+			icon_style 	"Icon"
+			hidden     	TRUE
+			quidu      	"3873EAA30015"
+			width      	300
+			height     	180)
+		    (object TierView "Business Services" @60
+			location   	(600, 0)
+			label      	(object ItemLabel
+			    Parent_View 	@60
+			    location   	(606, 6)
+			    nlines     	2
+			    max_width  	-12
+			    justify    	0
+			    label      	"Business Services")
+			icon_style 	"Icon"
+			hidden     	TRUE
+			quidu      	"3873EAA30017"
+			width      	300
+			height     	180)
+		    (object TierView "Data Services" @61
+			location   	(1200, 0)
+			label      	(object ItemLabel
+			    Parent_View 	@61
+			    location   	(1206, 6)
+			    nlines     	2
+			    max_width  	-12
+			    justify    	0
+			    label      	"Data Services")
+			icon_style 	"Icon"
+			hidden     	TRUE
+			quidu      	"3873EAA30019"
+			width      	300
+			height     	180)
+		    (object ClassView "Class" "Logical View::User Services::ZYFile" @62
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 128)
+			label      	(object ItemLabel
+			    Parent_View 	@62
+			    location   	(191, 83)
+			    nlines     	1
+			    max_width  	162
+			    justify    	0
+			    label      	"ZYFile")
+			icon_style 	"Icon"
+			quidu      	"3873EABA0130"
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::User Services::ZYDataTime" @63
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 2464)
+			label      	(object ItemLabel
+			    Parent_View 	@63
+			    location   	(151, 2419)
+			    nlines     	1
+			    max_width  	242
+			    justify    	0
+			    label      	"ZYDataTime")
+			icon_style 	"Icon"
+			quidu      	"3873EB50033F"
+			width      	260
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::User Services::ZYRandom" @64
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 2736)
+			label      	(object ItemLabel
+			    Parent_View 	@64
+			    location   	(161, 2691)
+			    nlines     	1
+			    max_width  	222
+			    justify    	0
+			    label      	"ZYRandom")
+			icon_style 	"Icon"
+			quidu      	"3873EB5801EC"
+			width      	240
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::User Services::IZYDatabase" @65
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 3632)
+			label      	(object ItemLabel
+			    Parent_View 	@65
+			    location   	(149, 3587)
+			    nlines     	1
+			    max_width  	246
+			    justify    	0
+			    label      	"IZYDatabase")
+			icon_style 	"Icon"
+			quidu      	"387658880161"
+			width      	264
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::User Services::IZYTable" @66
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 3904)
+			label      	(object ItemLabel
+			    Parent_View 	@66
+			    location   	(180, 3859)
+			    nlines     	1
+			    max_width  	184
+			    justify    	0
+			    label      	"IZYTable")
+			icon_style 	"Icon"
+			quidu      	"3876589A00B2"
+			width      	202
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::User Services::IZYIndex" @67
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 4176)
+			label      	(object ItemLabel
+			    Parent_View 	@67
+			    location   	(180, 4131)
+			    nlines     	1
+			    max_width  	184
+			    justify    	0
+			    label      	"IZYIndex")
+			icon_style 	"Icon"
+			quidu      	"387658B80337"
+			width      	202
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::User Services::IZYColumn" @68
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 4528)
+			label      	(object ItemLabel
+			    Parent_View 	@68
+			    location   	(161, 4483)
+			    nlines     	1
+			    max_width  	222
+			    justify    	0
+			    label      	"IZYColumn")
+			icon_style 	"Icon"
+			quidu      	"387658DE0205"
+			width      	240
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::User Services::IZYRandom" @69
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 4800)
+			label      	(object ItemLabel
+			    Parent_View 	@69
+			    location   	(159, 4755)
+			    nlines     	1
+			    max_width  	226
+			    justify    	0
+			    label      	"IZYRandom")
+			icon_style 	"Icon"
+			quidu      	"38765941029D"
+			width      	244
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object InheritView "" @70
+			stereotype 	TRUE
+			quidu      	"387659530131"
+			client     	@64
+			supplier   	@69
+			line_style 	0)
+		    (object ClassView "Class" "Logical View::User Services::IZYDateTime" @71
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 5072)
+			label      	(object ItemLabel
+			    Parent_View 	@71
+			    location   	(143, 5027)
+			    nlines     	1
+			    max_width  	258
+			    justify    	0
+			    label      	"IZYDateTime")
+			icon_style 	"Icon"
+			quidu      	"3876595603CA"
+			width      	276
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object InheritView "" @72
+			stereotype 	TRUE
+			quidu      	"38765968020D"
+			client     	@63
+			supplier   	@71
+			line_style 	0)
+		    (object ClassView "Class" "Logical View::User Services::ZYDatabseFile" @73
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 3088)
+			label      	(object ItemLabel
+			    Parent_View 	@73
+			    location   	(137, 3043)
+			    nlines     	1
+			    max_width  	270
+			    justify    	0
+			    label      	"ZYDatabseFile")
+			icon_style 	"Icon"
+			quidu      	"3873EBA500E8"
+			width      	288
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object InheritView "" @74
+			stereotype 	TRUE
+			quidu      	"3873EBB103CA"
+			client     	@73
+			supplier   	@62
+			line_style 	0)
+		    (object ClassView "Class" "Logical View::User Services::ZYIndex" @75
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 1024)
+			label      	(object ItemLabel
+			    Parent_View 	@75
+			    location   	(182, 979)
+			    nlines     	1
+			    max_width  	180
+			    justify    	0
+			    label      	"ZYIndex")
+			icon_style 	"Icon"
+			quidu      	"3873EAD203D4"
+			width      	198
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object InheritView "" @76
+			stereotype 	TRUE
+			quidu      	"387658C3033C"
+			client     	@75
+			supplier   	@67
+			line_style 	0)
+		    (object ClassView "Class" "Logical View::User Services::ZYRow" @77
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 1920)
+			label      	(object ItemLabel
+			    Parent_View 	@77
+			    location   	(191, 1875)
+			    nlines     	1
+			    max_width  	162
+			    justify    	0
+			    label      	"ZYRow")
+			icon_style 	"Icon"
+			quidu      	"3873EB2200B7"
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::User Services::ZYIndexDecl" @78
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 3360)
+			label      	(object ItemLabel
+			    Parent_View 	@78
+			    location   	(149, 3315)
+			    nlines     	1
+			    max_width  	246
+			    justify    	0
+			    label      	"ZYIndexDecl")
+			icon_style 	"Icon"
+			quidu      	"3876585301A1"
+			width      	264
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$24" @79
+			location   	(272, 3223)
+			stereotype 	TRUE
+			quidu      	"3876585F00A4"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$26" @80
+				Parent_View 	@79
+				location   	(0, -137)
+				label      	(object SegLabel @81
+				    Parent_View 	@80
+				    location   	(231, 3160)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"3876585F0308"
+				client     	@79
+				supplier   	@73
+				line_style 	0)
+			    (object RoleView "$UNNAMED$25" @82
+				Parent_View 	@79
+				location   	(0, -137)
+				label      	(object SegLabel @83
+				    Parent_View 	@82
+				    location   	(231, 3287)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"3876585F0307"
+				client     	@79
+				supplier   	@78
+				line_style 	0)))
+		    (object ClassView "Class" "Logical View::User Services::ZYDatabase" @84
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 1296)
+			label      	(object ItemLabel
+			    Parent_View 	@84
+			    location   	(157, 1251)
+			    nlines     	1
+			    max_width  	230
+			    justify    	0
+			    label      	"ZYDatabase")
+			icon_style 	"Icon"
+			quidu      	"3873EAD80007"
+			width      	248
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$18" @85
+			location   	(272, 2191)
+			stereotype 	TRUE
+			quidu      	"3873EBB70062"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$20" @86
+				Parent_View 	@85
+				location   	(0, 895)
+				label      	(object SegLabel @87
+				    Parent_View 	@86
+				    location   	(231, 2863)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"3873EBB70184"
+				client     	@85
+				supplier   	@73
+				line_style 	0)
+			    (object RoleView "$UNNAMED$19" @88
+				Parent_View 	@85
+				location   	(0, 895)
+				label      	(object SegLabel @89
+				    Parent_View 	@88
+				    location   	(231, 1521)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"3873EBB7017A"
+				client     	@85
+				supplier   	@84
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$21" @90
+			location   	(272, 1159)
+			stereotype 	TRUE
+			quidu      	"3873EBD600D4"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$23" @91
+				Parent_View 	@90
+				location   	(0, -137)
+				label      	(object SegLabel @92
+				    Parent_View 	@91
+				    location   	(231, 1096)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"3873EBD603A6"
+				client     	@90
+				supplier   	@75
+				line_style 	0)
+			    (object RoleView "$UNNAMED$22" @93
+				Parent_View 	@90
+				location   	(0, -137)
+				label      	(object SegLabel @94
+				    Parent_View 	@93
+				    location   	(231, 1223)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"3873EBD603A5"
+				client     	@90
+				supplier   	@84
+				line_style 	0)))
+		    (object InheritView "" @95
+			stereotype 	TRUE
+			quidu      	"387658910363"
+			client     	@84
+			supplier   	@65
+			line_style 	0)
+		    (object AssociationViewNew "$UNNAMED$27" @96
+			location   	(272, 2327)
+			stereotype 	TRUE
+			quidu      	"387658620094"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$29" @97
+				Parent_View 	@96
+				location   	(0, 1031)
+				label      	(object SegLabel @98
+				    Parent_View 	@97
+				    location   	(231, 3108)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"387658620293"
+				client     	@96
+				supplier   	@78
+				line_style 	0)
+			    (object RoleView "$UNNAMED$28" @99
+				Parent_View 	@96
+				location   	(0, 1031)
+				label      	(object SegLabel @100
+				    Parent_View 	@99
+				    location   	(231, 1547)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"387658620289"
+				client     	@96
+				supplier   	@84
+				line_style 	0)))
+		    (object ClassView "Class" "Logical View::User Services::ZYTable" @101
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 752)
+			label      	(object ItemLabel
+			    Parent_View 	@101
+			    location   	(188, 707)
+			    nlines     	1
+			    max_width  	168
+			    justify    	0
+			    label      	"ZYTable")
+			icon_style 	"Icon"
+			quidu      	"3873EACD0250"
+			width      	186
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$9" @102
+			location   	(272, 1335)
+			stereotype 	TRUE
+			quidu      	"3873EB2C0383"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$11" @103
+				Parent_View 	@102
+				location   	(0, 583)
+				label      	(object SegLabel @104
+				    Parent_View 	@103
+				    location   	(231, 1757)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"3873EB2D01FF"
+				client     	@102
+				supplier   	@77
+				line_style 	0)
+			    (object RoleView "$UNNAMED$10" @105
+				Parent_View 	@102
+				location   	(0, 583)
+				label      	(object SegLabel @106
+				    Parent_View 	@105
+				    location   	(231, 913)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"3873EB2D01FE"
+				client     	@102
+				supplier   	@101
+				line_style 	0)))
+		    (object InheritView "" @107
+			stereotype 	TRUE
+			quidu      	"3873EAEE0334"
+			client     	@75
+			supplier   	@101
+			line_style 	0)
+		    (object InheritView "" @108
+			stereotype 	TRUE
+			quidu      	"387658A302BE"
+			client     	@101
+			supplier   	@66
+			line_style 	0)
+		    (object AssociationViewNew "$UNNAMED$3" @109
+			location   	(272, 1023)
+			stereotype 	TRUE
+			quidu      	"3873EAF90068"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$5" @110
+				Parent_View 	@109
+				location   	(0, -273)
+				label      	(object SegLabel @111
+				    Parent_View 	@110
+				    location   	(231, 851)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"3873EAF90236"
+				client     	@109
+				supplier   	@101
+				line_style 	0)
+			    (object RoleView "$UNNAMED$4" @112
+				Parent_View 	@109
+				location   	(0, -273)
+				label      	(object SegLabel @113
+				    Parent_View 	@112
+				    location   	(231, 1195)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"3873EAF90235"
+				client     	@109
+				supplier   	@84
+				line_style 	0)))
+		    (object ClassView "Class" "Logical View::User Services::ZYColumn" @114
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 1648)
+			label      	(object ItemLabel
+			    Parent_View 	@114
+			    location   	(169, 1603)
+			    nlines     	1
+			    max_width  	206
+			    justify    	0
+			    label      	"ZYColumn")
+			icon_style 	"Icon"
+			quidu      	"3873EB1B0392"
+			width      	224
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$6" @115
+			location   	(272, 1199)
+			stereotype 	TRUE
+			quidu      	"3873EB280341"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$8" @116
+				Parent_View 	@115
+				location   	(0, 447)
+				label      	(object SegLabel @117
+				    Parent_View 	@116
+				    location   	(231, 1512)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"3873EB29011C"
+				client     	@115
+				supplier   	@114
+				line_style 	0)
+			    (object RoleView "$UNNAMED$7" @118
+				Parent_View 	@115
+				location   	(0, 447)
+				label      	(object SegLabel @119
+				    Parent_View 	@118
+				    location   	(231, 887)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"3873EB290112"
+				client     	@115
+				supplier   	@101
+				line_style 	0)))
+		    (object InheritView "" @120
+			stereotype 	TRUE
+			quidu      	"387658E90138"
+			client     	@114
+			supplier   	@68
+			line_style 	0)
+		    (object ClassView "Class" "Logical View::User Services::ZYTableFile" @121
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 480)
+			label      	(object ItemLabel
+			    Parent_View 	@121
+			    location   	(158, 435)
+			    nlines     	1
+			    max_width  	228
+			    justify    	0
+			    label      	"ZYTableFile")
+			icon_style 	"Icon"
+			quidu      	"3873EAC00111"
+			width      	246
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object InheritView "" @122
+			stereotype 	TRUE
+			quidu      	"3873EAE70044"
+			client     	@121
+			supplier   	@62
+			line_style 	0)
+		    (object AssociationViewNew "$UNNAMED$15" @123
+			location   	(272, 1199)
+			stereotype 	TRUE
+			quidu      	"3873EB7A0303"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$17" @124
+				Parent_View 	@123
+				location   	(0, -721)
+				label      	(object SegLabel @125
+				    Parent_View 	@124
+				    location   	(231, 669)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"3873EB7B0193"
+				client     	@123
+				supplier   	@121
+				line_style 	0)
+			    (object RoleView "$UNNAMED$16" @126
+				Parent_View 	@123
+				location   	(0, -721)
+				label      	(object SegLabel @127
+				    Parent_View 	@126
+				    location   	(231, 1729)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"3873EB7B0192"
+				client     	@123
+				supplier   	@77
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$0" @128
+			location   	(272, 615)
+			stereotype 	TRUE
+			quidu      	"3873EAF201D1"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$2" @129
+				Parent_View 	@128
+				location   	(0, -137)
+				label      	(object SegLabel @130
+				    Parent_View 	@129
+				    location   	(231, 552)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"3873EAF2039E"
+				client     	@128
+				supplier   	@121
+				line_style 	0)
+			    (object RoleView "$UNNAMED$1" @131
+				Parent_View 	@128
+				location   	(0, -137)
+				label      	(object SegLabel @132
+				    Parent_View 	@131
+				    location   	(231, 679)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"3873EAF20393"
+				client     	@128
+				supplier   	@101
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$12" @133
+			location   	(272, 1063)
+			stereotype 	TRUE
+			quidu      	"3873EB7701A0"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$14" @134
+				Parent_View 	@133
+				location   	(0, -585)
+				label      	(object SegLabel @135
+				    Parent_View 	@134
+				    location   	(231, 641)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"3873EB770377"
+				client     	@133
+				supplier   	@121
+				line_style 	0)
+			    (object RoleView "$UNNAMED$13" @136
+				Parent_View 	@133
+				location   	(0, -585)
+				label      	(object SegLabel @137
+				    Parent_View 	@136
+				    location   	(231, 1485)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"3873EB77036D"
+				client     	@133
+				supplier   	@114
+				line_style 	0)))
+		    (object ClassView "Class" "Logical View::User Services::ZYString" @138
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 2192)
+			label      	(object ItemLabel
+			    Parent_View 	@138
+			    location   	(181, 2147)
+			    nlines     	1
+			    max_width  	182
+			    justify    	0
+			    label      	"ZYString")
+			icon_style 	"Icon"
+			quidu      	"3873EB4B0305"
+			width      	200
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$30" @139
+			location   	(272, 1743)
+			stereotype 	TRUE
+			quidu      	"38765B67008B"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$32" @140
+				Parent_View 	@139
+				location   	(0, -449)
+				label      	(object SegLabel @141
+				    Parent_View 	@140
+				    location   	(231, 1431)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"38765B6702F9"
+				client     	@139
+				supplier   	@84
+				line_style 	0)
+			    (object RoleView "$UNNAMED$31" @142
+				Parent_View 	@139
+				location   	(0, -449)
+				label      	(object SegLabel @143
+				    Parent_View 	@142
+				    location   	(231, 2056)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"38765B6702F8"
+				client     	@139
+				supplier   	@138
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$33" @144
+			location   	(272, 1471)
+			stereotype 	TRUE
+			quidu      	"38765B6A019E"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$35" @145
+				Parent_View 	@144
+				location   	(0, -721)
+				label      	(object SegLabel @146
+				    Parent_View 	@145
+				    location   	(231, 941)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"38765B6B0091"
+				client     	@144
+				supplier   	@101
+				line_style 	0)
+			    (object RoleView "$UNNAMED$34" @147
+				Parent_View 	@144
+				location   	(0, -721)
+				label      	(object SegLabel @148
+				    Parent_View 	@147
+				    location   	(231, 2001)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"38765B6B0087"
+				client     	@144
+				supplier   	@138
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$36" @149
+			location   	(272, 1919)
+			stereotype 	TRUE
+			quidu      	"38765B6F00D3"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$38" @150
+				Parent_View 	@149
+				location   	(0, -273)
+				label      	(object SegLabel @151
+				    Parent_View 	@150
+				    location   	(231, 1747)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"38765B7000CA"
+				client     	@149
+				supplier   	@114
+				line_style 	0)
+			    (object RoleView "$UNNAMED$37" @152
+				Parent_View 	@149
+				location   	(0, -273)
+				label      	(object SegLabel @153
+				    Parent_View 	@152
+				    location   	(231, 2091)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"38765B7000C0"
+				client     	@149
+				supplier   	@138
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$39" @154
+			location   	(272, 2775)
+			stereotype 	TRUE
+			quidu      	"38765B79002D"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$41" @155
+				Parent_View 	@154
+				location   	(0, 583)
+				label      	(object SegLabel @156
+				    Parent_View 	@155
+				    location   	(231, 3197)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"38765B79031D"
+				client     	@154
+				supplier   	@78
+				line_style 	0)
+			    (object RoleView "$UNNAMED$40" @157
+				Parent_View 	@154
+				location   	(0, 583)
+				label      	(object SegLabel @158
+				    Parent_View 	@157
+				    location   	(231, 2353)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"38765B79031C"
+				client     	@154
+				supplier   	@138
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$42" @159
+			location   	(272, 1743)
+			stereotype 	TRUE
+			quidu      	"3871324D038B"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$44" @160
+				Parent_View 	@159
+				location   	(0, -449)
+				label      	(object SegLabel @161
+				    Parent_View 	@160
+				    location   	(231, 1431)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"3871324E029C"
+				client     	@159
+				supplier   	@84
+				line_style 	0)
+			    (object RoleView "$UNNAMED$43" @162
+				Parent_View 	@159
+				location   	(0, -449)
+				label      	(object SegLabel @163
+				    Parent_View 	@162
+				    location   	(231, 2056)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"3871324E0292"
+				client     	@159
+				supplier   	@138
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$45" @164
+			location   	(272, 1471)
+			stereotype 	TRUE
+			quidu      	"387132500399"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$47" @165
+				Parent_View 	@164
+				location   	(0, -721)
+				label      	(object SegLabel @166
+				    Parent_View 	@165
+				    location   	(231, 941)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"3871325101F7"
+				client     	@164
+				supplier   	@101
+				line_style 	0)
+			    (object RoleView "$UNNAMED$46" @167
+				Parent_View 	@164
+				location   	(0, -721)
+				label      	(object SegLabel @168
+				    Parent_View 	@167
+				    location   	(231, 2001)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"3871325101F6"
+				client     	@164
+				supplier   	@138
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$48" @169
+			location   	(272, 1919)
+			stereotype 	TRUE
+			quidu      	"387132600003"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$50" @170
+				Parent_View 	@169
+				location   	(0, -273)
+				label      	(object SegLabel @171
+				    Parent_View 	@170
+				    location   	(231, 1747)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"387132600343"
+				client     	@169
+				supplier   	@114
+				line_style 	0)
+			    (object RoleView "$UNNAMED$49" @172
+				Parent_View 	@169
+				location   	(0, -273)
+				label      	(object SegLabel @173
+				    Parent_View 	@172
+				    location   	(231, 2091)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"387132600342"
+				client     	@169
+				supplier   	@138
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$51" @174
+			location   	(272, 1335)
+			stereotype 	TRUE
+			quidu      	"3871327B02BF"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$53" @175
+				Parent_View 	@174
+				location   	(0, -857)
+				label      	(object SegLabel @176
+				    Parent_View 	@175
+				    location   	(231, 697)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				quidu      	"3871327C01DB"
+				client     	@174
+				supplier   	@121
+				line_style 	0)
+			    (object RoleView "$UNNAMED$52" @177
+				Parent_View 	@174
+				location   	(0, -857)
+				label      	(object SegLabel @178
+				    Parent_View 	@177
+				    location   	(231, 1975)
+				    hidden     	TRUE
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	""
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	1)
+				stereotype 	TRUE
+				quidu      	"3871327C01DA"
+				client     	@174
+				supplier   	@138
+				line_style 	0)))
+		    (object ClassView "Class" "Logical View::User Services::IZYMemory" @179
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 5344)
+			label      	(object ItemLabel
+			    Parent_View 	@179
+			    location   	(159, 5299)
+			    nlines     	1
+			    max_width  	226
+			    justify    	0
+			    label      	"IZYMemory")
+			icon_style 	"Icon"
+			quidu      	"386DF27300E2"
+			width      	244
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::User Services::ZYMemory" @180
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(272, 5616)
+			label      	(object ItemLabel
+			    Parent_View 	@180
+			    location   	(167, 5571)
+			    nlines     	1
+			    max_width  	210
+			    justify    	0
+			    label      	"ZYMemory")
+			icon_style 	"Icon"
+			quidu      	"386DF27C0257"
+			width      	228
+			height     	112
+			annotation 	8
+			autoResize 	TRUE)
+		    (object InheritView "" @181
+			stereotype 	TRUE
+			quidu      	"386DF285003E"
+			client     	@180
+			supplier   	@179
+			line_style 	0)))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"3873EAA2008E"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"3873EAA3000B"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    process_structure 	(object Processes
+	quid       	"3873EAA2008F"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"3873EAA20091"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	attributes 	(list Attribute_Set
+	    (object Attribute
+		tool       	"Repository"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"SourceSafe"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"TypeLibImporter"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"VC++"
+		name       	"propertyId"
+		value      	"809135966")
+	    (object Attribute
+		tool       	"VC++"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"VC++"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"VC++"
+			name       	"HeaderFile"
+			value      	"AUTO GENERATE")))
+	    (object Attribute
+		tool       	"VC++"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"VC++"
+			name       	"OperationIsConst"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"VC++"
+			name       	"OperationKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"VC++"
+				name       	"Non-virtual"
+				value      	200)
+			    (object Attribute
+				tool       	"VC++"
+				name       	"Abstract"
+				value      	201)
+			    (object Attribute
+				tool       	"VC++"
+				name       	"Virtual"
+				value      	202)))
+		    (object Attribute
+			tool       	"VC++"
+			name       	"OperationKind"
+			value      	("OperationKindSet" 200))))
+	    (object Attribute
+		tool       	"VC++"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"VJ++"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"propertyId"
+		value      	"783606378")
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"CreatableSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"Private"
+				value      	221)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"PublicNotCreatable"
+				value      	213)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"SingleUse"
+				value      	214)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"GlobalSingleUse"
+				value      	215)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"MultiUse"
+				value      	219)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"GlobalMultiUse"
+				value      	220)))
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"OptionBase"
+			value      	"0")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"OptionExplicit"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"OptionCompare"
+			value      	("CompareSet" 202))
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"Creatable"
+			value      	("CreatableSet" 221))
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"GenerateInitialization"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"GenerateTermination"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"CollectionClass"
+			value      	"Collection")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"CompareSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"None"
+				value      	202)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"Binary"
+				value      	203)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"Text"
+				value      	204)))))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"OperationName"
+			value      	"$operation")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"LibraryName"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"AliasName"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"IsStatic"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"EntryCode"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ExitCode"
+			value      	(value Text ""))))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"IsConst"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"New"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"WithEvents"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"Subscript"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"NameIfUnlabeled"
+			value      	"the$supplier")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"GenerateDataMember"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"DataMemberName"
+			value      	"$relationship")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"GenerateGetOperation"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"GenerateSetOperation"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"GenerateLetOperation"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"New"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"WithEvents"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"Subscript"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"NameIfUnlabeled"
+			value      	"the$supplier")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"GenerateDataMember"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"DataMemberName"
+			value      	"$relationship")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"GenerateGetOperation"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"GenerateSetOperation"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"GenerateLetOperation"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Inherit"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ImplementsDelegation"
+			value      	TRUE)))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ProjectFile"
+			value      	"")))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"VisualStudio"
+		name       	"HiddenTool"
+		value      	FALSE))
+	quid       	"3873EAA20090"))

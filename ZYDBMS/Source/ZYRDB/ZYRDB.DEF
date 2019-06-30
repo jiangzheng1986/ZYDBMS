@@ -1,0 +1,16 @@
+;зїеп:НЏеў
+EXPORTS
+    IZYDatabase_Create      @1      NONAME
+    IZYDatabase_Open        @2      NONAME
+    IZYDatabase_Close       @3      NONAME
+    IZYDatabase_Drop        @4      NONAME
+    IZYDatabase_Restore     @5      NONAME
+    IZYDateTime_Create      @6      NONAME
+    IZYDateTime_Release     @7      NONAME
+    IZYDateTime_Today       @8      NONAME
+    IZYRandom_Create        @9      NONAME
+    IZYRandom_Release       @10     NONAME
+    IZYMemory_Create        @11     NONAME
+    IZYMemory_Release       @12     NONAME
+    IZYDatabase_Exists      @13     NONAME
+    IZYDatabase_Opened      @14     NONAME

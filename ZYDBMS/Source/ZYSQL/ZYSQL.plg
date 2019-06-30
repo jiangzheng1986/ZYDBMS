@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ZYSQL - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\蒋政\LOCALS~1\Temp\RSP49.tmp" with contents
+[
+/nologo /MT /W3 /GX /Zi /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ZYSQL_EXPORTS" /FR"Release/" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\MyProjects\ZYDBMS\逐月数据库管理系统\软件源程序\ZYSQL\ZYSQL1.CPP"
+"D:\MyProjects\ZYDBMS\逐月数据库管理系统\软件源程序\ZYSQL\ZYSQL2.CPP"
+"D:\MyProjects\ZYDBMS\逐月数据库管理系统\软件源程序\ZYSQL\ZYSQL3.CPP"
+"D:\MyProjects\ZYDBMS\逐月数据库管理系统\软件源程序\ZYSQL\ZYSQL4.CPP"
+"D:\MyProjects\ZYDBMS\逐月数据库管理系统\软件源程序\ZYSQL\ZYSQL5.CPP"
+"D:\MyProjects\ZYDBMS\逐月数据库管理系统\软件源程序\ZYSQL\ZYSQL6.CPP"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\蒋政\LOCALS~1\Temp\RSP49.tmp"" 
+Creating temporary file "C:\DOCUME~1\蒋政\LOCALS~1\Temp\RSP4A.tmp" with contents
+[
+zyrdb.lib shlwapi.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/ZYSQL.pdb" /debug /machine:I386 /def:".\ZYSQL.DEF" /out:"Release/ZYSQL.dll" /implib:"Release/ZYSQL.lib" 
+".\Release\ZYSQL1.OBJ"
+".\Release\ZYSQL2.OBJ"
+".\Release\ZYSQL3.OBJ"
+".\Release\ZYSQL4.OBJ"
+".\Release\ZYSQL5.OBJ"
+".\Release\ZYSQL6.OBJ"
+]
+Creating command line "link.exe @"C:\DOCUME~1\蒋政\LOCALS~1\Temp\RSP4A.tmp""
+<h3>Output Window</h3>
+Compiling...
+ZYSQL1.CPP
+ZYSQL2.CPP
+ZYSQL3.CPP
+ZYSQL4.CPP
+ZYSQL5.CPP
+ZYSQL6.CPP
+Generating Code...
+Linking...
+   Creating library Release/ZYSQL.lib and object Release/ZYSQL.exp
+Creating command line "bscmake.exe /nologo /o"Release/ZYSQL.bsc"  ".\Release\ZYSQL1.SBR" ".\Release\ZYSQL2.SBR" ".\Release\ZYSQL3.SBR" ".\Release\ZYSQL4.SBR" ".\Release\ZYSQL5.SBR" ".\Release\ZYSQL6.SBR""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+ZYSQL.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

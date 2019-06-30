@@ -1,0 +1,199 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ZYQUERY             ICON    DISCARDABLE     "ZYQUERY.ICO"
+IDI_SMALL               ICON    DISCARDABLE     "SMALL.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "退出(&X)",                    IDM_QUERY1_FILE_EXIT
+    END
+END
+
+IDR_MENU2 MENU DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "关闭(&C)",                    IDM_QUERY2_FILE_CLOSE
+    END
+    POPUP "查询(&Q)"
+    BEGIN
+        MENUITEM "新建(&N) Ctrl+N",             IDM_QUERY2_QUERY_NEW
+        MENUITEM "删除(&D)",                    IDM_QUERY2_QUERY_DELETE
+    END
+END
+
+IDR_MENU3 MENU DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "保存(&S) Ctrl+S",             IDM_QUERY3_FILE_SAVE
+        MENUITEM "关闭(&C)",                    IDM_QUERY3_FILE_CLOSE
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "剪切(&T) Ctrl+X",             IDM_QUERY3_EDIT_CUT
+        MENUITEM "复制(&C) Ctrl+C",             IDM_QUERY3_EDIT_COPY
+        MENUITEM "粘贴(&P) Ctrl+V",             IDM_QUERY3_EDIT_PASTE
+    END
+    POPUP "智能(&S)"
+    BEGIN
+        MENUITEM "智能检查(&C)",                IDM_QUERY3_SYNTAX_CHECK
+        MENUITEM "智能感知(&I)",                IDM_QUERY3_SYNTAX_SENSE
+    END
+    POPUP "选项(&O)"
+    BEGIN
+        MENUITEM "源程序(&S)",                  IDM_QUERY3_OPTION_SOURCE
+        MENUITEM "词法标记(&M)",                IDM_QUERY3_OPTION_MATCH
+        MENUITEM "抽象语法树(&A)",              IDM_QUERY3_OPTION_AST
+        MENUITEM "优化语法树(&O)",              IDM_QUERY3_OPTION_OST
+        MENUITEM "源表格(&T)",                  IDM_QUERY3_OPTION_TABLES
+        MENUITEM "查询计时(&P)",                IDM_QUERY3_OPTION_TIME
+        MENUITEM "查询结果(&R)",                IDM_QUERY3_OPTION_RESULT
+    END
+    POPUP "执行(&E)"
+    BEGIN
+        MENUITEM "执行(&E) F5",                 IDM_QUERY3_EXECUTE_EXECUTE
+        MENUITEM "结果(&R) F6",                 IDM_QUERY3_EXECUTE_RESULT
+    END
+END
+
+IDR_MENU4 MENU DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "关闭(&C)",                    IDM_QUERY4_FILE_CLOSE
+    END
+    POPUP "元组(&R)"
+    BEGIN
+        MENUITEM "新增(&N) Ctrl+A",             IDM_QUERY4_ROW_APPEND
+        MENUITEM "删除(&D) Del",                IDM_QUERY4_ROW_DELETE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_ZYQUERY ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "A",            IDM_QUERY4_ROW_APPEND,  VIRTKEY, CONTROL, NOINVERT
+    "C",            IDM_QUERY3_EDIT_COPY,   VIRTKEY, CONTROL, NOINVERT
+    "N",            IDM_QUERY2_QUERY_NEW,   VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_QUERY3_FILE_SAVE,   VIRTKEY, CONTROL, NOINVERT
+    "V",            IDM_QUERY3_EDIT_PASTE,  VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          IDM_QUERY3_EXECUTE_EXECUTE, VIRTKEY, NOINVERT
+    VK_F6,          IDM_QUERY3_EXECUTE_RESULT, VIRTKEY, NOINVERT
+    "X",            IDM_QUERY3_EDIT_CUT,    VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_FINGER       BITMAP  DISCARDABLE     "finger.bmp"
+IDB_BITMAP_JAZZ         BITMAP  DISCARDABLE     "jazz.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "01.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "02.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "03.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "04.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "05.bmp"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "06.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "ZYQUERY"
+    IDS_HELLO               "Hello World!"
+    IDC_ZYQUERY             "ZYQUERY"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

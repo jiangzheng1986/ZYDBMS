@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ZYGUI - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\蒋政\LOCALS~1\Temp\RSP6A.tmp" with contents
+[
+/nologo /MT /W3 /GX /Zi /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ZYGUI_EXPORTS" /FR"Release/" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\MyProjects\ZYDBMS\逐月数据库管理系统\软件源程序\ZYGUI\ZYGUI1.CPP"
+"D:\MyProjects\ZYDBMS\逐月数据库管理系统\软件源程序\ZYGUI\ZYGUI2.CPP"
+"D:\MyProjects\ZYDBMS\逐月数据库管理系统\软件源程序\ZYGUI\ZYGUI3.CPP"
+"D:\MyProjects\ZYDBMS\逐月数据库管理系统\软件源程序\ZYGUI\ZYGUI4.CPP"
+"D:\MyProjects\ZYDBMS\逐月数据库管理系统\软件源程序\ZYGUI\ZYGUI5.CPP"
+"D:\MyProjects\ZYDBMS\逐月数据库管理系统\软件源程序\ZYGUI\ZYGUI6.CPP"
+"D:\MyProjects\ZYDBMS\逐月数据库管理系统\软件源程序\ZYGUI\ZYGUI7.CPP"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\蒋政\LOCALS~1\Temp\RSP6A.tmp"" 
+Creating temporary file "C:\DOCUME~1\蒋政\LOCALS~1\Temp\RSP6B.tmp" with contents
+[
+zyrdb.lib zysql.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/ZYGUI.pdb" /debug /machine:I386 /def:".\ZYGUI.DEF" /out:"Release/ZYGUI.dll" /implib:"Release/ZYGUI.lib" 
+".\Release\ZYGUI1.OBJ"
+".\Release\ZYGUI2.OBJ"
+".\Release\ZYGUI3.OBJ"
+".\Release\ZYGUI4.OBJ"
+".\Release\ZYGUI5.OBJ"
+".\Release\ZYGUI6.OBJ"
+".\Release\ZYGUI7.OBJ"
+]
+Creating command line "link.exe @"C:\DOCUME~1\蒋政\LOCALS~1\Temp\RSP6B.tmp""
+<h3>Output Window</h3>
+Compiling...
+ZYGUI1.CPP
+ZYGUI2.CPP
+ZYGUI3.CPP
+ZYGUI4.CPP
+ZYGUI5.CPP
+ZYGUI6.CPP
+ZYGUI7.CPP
+Generating Code...
+Linking...
+   Creating library Release/ZYGUI.lib and object Release/ZYGUI.exp
+Creating command line "bscmake.exe /nologo /o"Release/ZYGUI.bsc"  ".\Release\ZYGUI1.SBR" ".\Release\ZYGUI2.SBR" ".\Release\ZYGUI3.SBR" ".\Release\ZYGUI4.SBR" ".\Release\ZYGUI5.SBR" ".\Release\ZYGUI6.SBR" ".\Release\ZYGUI7.SBR""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+ZYGUI.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
